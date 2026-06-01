@@ -1,0 +1,229 @@
+Target animal,Food type,Brand,Code,Plastic present
+Hedgehog,Dry,Bramble,B2,0
+Hedgehog,Dry,Bramble,B5,0
+Hedgehog,Dry,Bramble,B6,0
+Hedgehog,Dry,Bramble,B1,1
+Hedgehog,Dry,Bramble,B3,1
+Hedgehog,Dry,Bramble,B4,1
+Dog,Dry,Canin ,CD2,0
+Dog,Dry,Canin ,CD3,0
+Dog,Dry,Canin ,CD4,0
+Dog,Dry,Canin ,CD5,0
+Dog,Wet,Canin ,CM1,0
+Dog,Wet,Canin ,CM2,0
+Dog,Wet,Canin ,CM3,0
+Dog,Wet,Canin ,CM6,0
+Dog,Dry,Canin ,CD1,1
+Dog,Dry,Canin ,CD6,1
+Dog,Wet,Canin ,CM4,1
+Dog,Wet,Canin ,CM5,1
+Hedgehog,Dry,Extra select natural,ESN2,0
+Hedgehog,Dry,Extra select natural,ESN3,0
+Hedgehog,Dry,Extra select natural,ESN4,0
+Hedgehog,Dry,Extra select natural,ESN6,0
+Hedgehog,Dry,Extra select natural,ESN1,1
+Hedgehog,Dry,Extra select natural,ESN5,1
+Hedgehog,Dry,Gardmanbites,GHB1,0
+Hedgehog,Dry,Gardmanbites,GHB2,0
+Hedgehog,Dry,Gardmanbites,GHB3,0
+Hedgehog,Dry,Gardmanbites,GHB4,0
+Hedgehog,Dry,Gardmanbites,GHB5,0
+Hedgehog,Dry,Gardmanbites,GHB6,0
+Cat,Dry,Harringtons,H1,0
+Cat,Dry,Harringtons,H3,0
+Cat,Dry,Harringtons,H6,0
+Dog,Dry,Harringtons,Har1,0
+Dog,Dry,Harringtons,Har4,0
+Dog,Dry,Harringtons,Har6,0
+Cat,Wet,Harringtons,HWC1,0
+Cat,Wet,Harringtons,HWC3,0
+Cat,Wet,Harringtons,HWC4,0
+Cat,Wet,Harringtons,HWC6,0
+Dog,Wet,Harringtons,HWD1,0
+Dog,Wet,Harringtons,HWD2,0
+Dog,Wet,Harringtons,HWD3,0
+Dog,Wet,Harringtons,HWD4,0
+Dog,Wet,Harringtons,HWD5,0
+Dog,Wet,Harringtons,HWD6,0
+Cat,Dry,Harringtons,H2,1
+Cat,Dry,Harringtons,H4,1
+Cat,Dry,Harringtons,H5,1
+Dog,Dry,Harringtons,Har2,1
+Dog,Dry,Harringtons,Har3,1
+Dog,Dry,Harringtons,Har5,1
+Cat,Wet,Harringtons,HWC2,1
+Cat,Wet,Harringtons,HWC5,1
+Hedgehog,Dry,I love hedgehogs,I<3H1,0
+Hedgehog,Dry,I love hedgehogs,I<3H2,0
+Hedgehog,Dry,I love hedgehogs,I<3H3,0
+Hedgehog,Dry,I love hedgehogs,I<3H4,0
+Hedgehog,Dry,I love hedgehogs,I<3H5,0
+Hedgehog,Dry,I love hedgehogs,I<3H6,0
+Cat,Dry,Iams,Iams1D,0
+Cat,Dry,Iams,Iams3D,0
+Cat,Dry,Iams,Iams4D,0
+Cat,Dry,Iams,Iams5D,0
+Cat,Dry,Iams,Iams6D,0
+Dog,Dry,Iams,Iams(2DD),0
+Dog,Dry,Iams,Iams1(DD),0
+Dog,Dry,Iams,Iams3(DD),0
+Dog,Dry,Iams,Iams4(DD),0
+Dog,Dry,Iams,Iams5(DD),0
+Dog,Dry,Iams,Iams6(DD),0
+Cat,Wet,Iams,IWC1,0
+Cat,Wet,Iams,IWC2,0
+Cat,Wet,Iams,IWC3,0
+Cat,Wet,Iams,IWC4,0
+Cat,Wet,Iams,IWC5,0
+Cat,Wet,Iams,IWC6,0
+Cat,Dry,Iams,Iams2D,1
+Hedgehog,Dry,Igelfutter food,IHF1,0
+Hedgehog,Dry,Igelfutter food,IHF2,0
+Hedgehog,Dry,Igelfutter food,IHF3,0
+Hedgehog,Dry,Igelfutter food,IHF4,0
+Hedgehog,Dry,Igelfutter food,IHF5,0
+Hedgehog,Dry,Igelfutter food,IHF6,1
+Cat,Dry,Lily's kitchen ,LKDC1,0
+Cat,Dry,Lily's kitchen ,LKDC2,0
+Cat,Dry,Lily's kitchen ,LKDC3,0
+Cat,Dry,Lily's kitchen ,LKDC4,0
+Cat,Dry,Lily's kitchen ,LKDC6,0
+Dog,Dry,Lily's kitchen ,LKDD1,0
+Dog,Dry,Lily's kitchen ,LKDD2,0
+Dog,Dry,Lily's kitchen ,LKDD3,0
+Dog,Dry,Lily's kitchen ,LKDD4,0
+Dog,Dry,Lily's kitchen ,LKDD5,0
+Cat,Wet,Lily's kitchen ,LKWC1,0
+Cat,Wet,Lily's kitchen ,LKWC2,0
+Cat,Wet,Lily's kitchen ,LKWC3,0
+Cat,Wet,Lily's kitchen ,LKWC4,0
+Cat,Wet,Lily's kitchen ,LKWC5,0
+Cat,Wet,Lily's kitchen ,LKWC6,0
+Dog,Wet,Lily's kitchen ,LKWD1,0
+Dog,Wet,Lily's kitchen ,LKWD2,0
+Dog,Wet,Lily's kitchen ,LKWD3,0
+Dog,Wet,Lily's kitchen ,LKWD4,0
+Dog,Wet,Lily's kitchen ,LKWD6,0
+Cat,Dry,Lily's kitchen ,LKDC5,1
+Dog,Dry,Lily's kitchen ,LKDD6,1
+Dog,Wet,Lily's kitchen ,LKWD5,1
+Hedgehog,Dry,Mr Johnson,MrJ1,0
+Hedgehog,Dry,Mr Johnson,MrJ2,0
+Hedgehog,Dry,Mr Johnson,MrJ4,0
+Hedgehog,Dry,Mr Johnson,MrJ5,0
+Hedgehog,Dry,Mr Johnson,MrJ6,0
+Hedgehog,Dry,Mr Johnson,MrJ3,1
+Dog,Dry,Nature variety,NV1,0
+Dog,Dry,Nature variety,NV2,0
+Dog,Dry,Nature variety,NV3,0
+Dog,Dry,Nature variety,NV4,0
+Dog,Dry,Nature variety,NV5,0
+Dog,Dry,Nature variety,NV6,0
+Dog,Wet,Natures variety,NM1,0
+Dog,Wet,Natures variety,NM2,0
+Dog,Wet,Natures variety,NM3,0
+Dog,Wet,Natures variety,NM4,0
+Dog,Wet,Natures variety,NM5,0
+Dog,Wet,Natures variety,NM6,0
+Dog,Dry,Pedigree,PD1,0
+Dog,Dry,Pedigree,PD3,0
+Dog,Dry,Pedigree,PD5,0
+Dog,Wet,Pedigree,PW1,0
+Dog,Wet,Pedigree,PW2,0
+Dog,Wet,Pedigree,PW3,0
+Dog,Wet,Pedigree,PW4,0
+Dog,Wet,Pedigree,PW6,0
+Dog,Dry,Pedigree,PD2,1
+Dog,Dry,Pedigree,PD4,1
+Dog,Dry,Pedigree,PD6,1
+Dog,Wet,Pedigree,PW5,1
+Cat,Dry,Sainsburys,SCD1,0
+Cat,Dry,Sainsburys,SCD2,0
+Cat,Dry,Sainsburys,SCD3,0
+Cat,Dry,Sainsburys,SCD4,0
+Cat,Dry,Sainsburys,SCD6,0
+Cat,Wet,Sainsburys,CN2wc,0
+Cat,Wet,Sainsburys,CN4wc,0
+Cat,Wet,Sainsburys,CN5wc,0
+Cat,Wet,Sainsburys,CN6wc,0
+Dog,Wet,Sainsburys,CNWD1,0
+Dog,Wet,Sainsburys,CNWD2,0
+Dog,Wet,Sainsburys,CNWD3,0
+Dog,Wet,Sainsburys,CNWD4,0
+Dog,Wet,Sainsburys,CNWD6,0
+Cat,Dry,Sainsburys,SCD5,1
+Cat,Wet,Sainsburys,CN1wc,1
+Cat,Wet,Sainsburys,CN3wc,1
+Dog,Wet,Sainsburys,CNWD5,1
+Cat,Dry,Scrumbles ,SCRD1,0
+Cat,Dry,Scrumbles ,SCRD3,0
+Cat,Dry,Scrumbles ,SCRD5,0
+Cat,Dry,Scrumbles ,SCRD6,0
+Cat,Wet,Scrumbles ,SCRW1,0
+Cat,Wet,Scrumbles ,SCRW2,0
+Cat,Wet,Scrumbles ,SCRW3,0
+Cat,Wet,Scrumbles ,SCRW4,0
+Cat,Wet,Scrumbles ,SCRW5,0
+Cat,Wet,Scrumbles ,SCRW6,0
+Cat,Dry,Scrumbles ,SCRD2,1
+Cat,Dry,Scrumbles ,SCRD4,1
+Hedgehog,Dry,Spikes,S1,0
+Hedgehog,Dry,Spikes,S2,0
+Hedgehog,Dry,Spikes,S3,0
+Hedgehog,Dry,Spikes,S6,0
+Hedgehog,Dry,Spikes,S4,1
+Hedgehog,Dry,Spikes,S5,1
+Dog,Dry,Tesco,TDD2,0
+Dog,Dry,Tesco,TDD6,0
+Dog,Dry,Tesco,TDD1,1
+Dog,Dry,Tesco,TDD3,1
+Dog,Dry,Tesco,TDD4,1
+Dog,Dry,Tesco,TDD5,1
+Cat,Dry,Tesco ,TD1,0
+Cat,Dry,Tesco ,TD5,0
+Cat,Dry,Tesco ,TD6,0
+Cat,Wet,Tesco ,TWC3,0
+Cat,Wet,Tesco ,TWC4,0
+Cat,Wet,Tesco ,TWC5,0
+Cat,Wet,Tesco ,TWC6,0
+Dog,Wet,Tesco ,TWD1,0
+Dog,Wet,Tesco ,TWD2,0
+Dog,Wet,Tesco ,TWD5,0
+Dog,Wet,Tesco ,TWD6,0
+Cat,Dry,Tesco ,TD2,1
+Cat,Dry,Tesco ,TD3,1
+Cat,Dry,Tesco ,TD4,1
+Cat,Wet,Tesco ,TWC1,1
+Cat,Wet,Tesco ,TWC2,1
+Dog,Wet,Tesco ,TWD3,1
+Dog,Wet,Tesco ,TWD4,1
+Dog,Dry,Waitrose ,WD4,0
+Cat,Wet,Waitrose ,EWC3,0
+Dog,Wet,Waitrose ,WW1,0
+Dog,Wet,Waitrose ,WW2,0
+Dog,Wet,Waitrose ,WW4,0
+Dog,Wet,Waitrose ,WW5,0
+Dog,Wet,Waitrose ,WW6,0
+Dog,Dry,Waitrose ,WD1,1
+Dog,Dry,Waitrose ,WD2,1
+Dog,Dry,Waitrose ,WD3,1
+Dog,Dry,Waitrose ,WD5,1
+Dog,Dry,Waitrose ,WD6,1
+Cat,Wet,Waitrose ,EWC2,1
+Cat,Wet,Waitrose ,EWC1,1
+Cat,Wet,Waitrose ,EWC4,1
+Cat,Wet,Waitrose ,EWC5,1
+Cat,Wet,Waitrose ,EWC6,1
+Dog,Wet,Waitrose ,WW3,1
+Cat,Wet,Whiskas,W6,0
+Cat,Wet,Whiskas,W1,1
+Cat,Wet,Whiskas,W2,1
+Cat,Wet,Whiskas,W3,1
+Cat,Wet,Whiskas,W4,1
+Cat,Wet,Whiskas,W5,1
+Hedgehog,Dry,Wild things,WT1,0
+Hedgehog,Dry,Wild things,WT2,0
+Hedgehog,Dry,Wild things,WT3,0
+Hedgehog,Dry,Wild things,WT4,0
+Hedgehog,Dry,Wild things,WT6,0
+Hedgehog,Dry,Wild things,WT5,1
