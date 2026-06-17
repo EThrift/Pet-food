@@ -16,8 +16,7 @@ library(emmeans)
 library(ggplot2)
 library(reshape2)
 
-df_presence <- read_csv("Plastic per gram.csv")
-
+df_presence <- read_csv("Microplastic_petfood_Plastic per gram.csv")
 
 # Remove spaces from column names
 colnames(df_presence) <- make.names(colnames(df_presence))
