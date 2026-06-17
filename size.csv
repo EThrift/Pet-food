@@ -1,0 +1,99 @@
+Animal,Type,Brand,Size,Price category
+Hedgehog,Dry,Bramble,0.27,Mid range
+Hedgehog,Dry,Bramble,0.09,Mid range
+Hedgehog,Dry,Bramble,0.18,Mid range
+Hedgehog,Dry,Bramble,1.6,Mid range
+Dog,Dry,Canin ,0.06,Mid range
+Dog,Dry,Canin ,3.2,Mid range
+Dog,Dry,Canin ,0.22,Mid range
+Dog,Dry,Canin ,0.81,Mid range
+Dog,Wet,Canin ,0.46,Premium
+Dog,Wet,Canin ,0.14,Premium
+Dog,Wet,Canin ,0.31,Premium
+Hedgehog,Dry,Extra select natural,0.1,Value
+Hedgehog,Dry,Extra select natural,0.6,Value
+Hedgehog,Dry,Extra select natural,0.42,Value
+Hedgehog,Dry,Extra select natural,0.13,Value
+Hedgehog,Dry,Extra select natural,0.31,Value
+Dog,Dry,Harringtons,0.12,Value
+Dog,Dry,Harringtons,0.23,Value
+Dog,Dry,Harringtons,0.13,Value
+Dog,Dry,Harringtons,0.01,Value
+Dog,Dry,Harringtons,0.7,Value
+Cat,Dry,Harringtons,0.19,Mid range
+Cat,Dry,Harringtons,0.04,Mid range
+Cat,Dry,Harringtons,0.23,Mid range
+Cat,Wet,Harringtons,0.42,Mid range
+Cat,Wet,Harringtons,0.41,Mid range
+Cat,Dry,Iams ,0.22,Mid range
+Cat,Dry,Iams ,0.04,Mid range
+Hedgehog,Dry,Igelfutter food,0.12,Premium
+Dog,Dry,Lily's kitchen ,0.6,Premium
+Dog,Dry,Lily's kitchen ,0.7,Premium
+Dog,Dry,Lily's kitchen ,0.09,Premium
+Cat,Dry,Lily's kitchen ,0.6,Premium
+Cat,Dry,Lily's kitchen ,0.1,Premium
+Dog,Wet,Lily's kitchen ,0.13,Premium
+Dog,Wet,Lily's kitchen ,0.23,Premium
+Hedgehog,Dry,Mr Johnson,0.22,Mid range
+Dog,Dry,Pedigree ,0.11,Mid range
+Dog,Dry,Pedigree dry,0.32,Mid range
+Dog,Dry,Pedigree dry,0.14,Mid range
+Dog,Wet,Pedigree dry,0.09,Mid range
+Dog,Dry,Sainsbury,2.2,Value
+Cat,Wet,Sainsbury,0.08,Value
+Cat,Wet,Sainsbury,1.1,Value
+Cat,Wet,Sainsbury,1.3,Value
+Cat,Wet,Sainsbury,1.3,Value
+Cat,Dry,Scrumbles,0.38,Premium
+Cat,Dry,Scrumbles,0.12,Premium
+Cat,Dry,Scrumbles,0.23,Premium
+Hedgehog,Dry,Spikes,0.31,Mid range
+Hedgehog,Dry,Spikes,0.91,Mid range
+Hedgehog,Dry,Spikes,1.1,Mid range
+Dog,Dry,Tesco,0.3,Value
+Dog,Dry,Tesco,3.8,Value
+Dog,Dry,Tesco,2.3,Value
+Dog,Dry,Tesco,0.08,Value
+Dog,Dry,Tesco,0.35,Value
+Dog,Dry,Tesco,0.23,Value
+Dog,Dry,Tesco,0.09,Value
+Dog,Dry,Tesco,1.3,Value
+Cat,Dry,Tesco,0.05,Value
+Cat,Dry,Tesco,0.05,Value
+Cat,Dry,Tesco,0.19,Value
+Cat,Dry,Tesco,0.13,Value
+Cat,Dry,Tesco,0.12,Value
+Cat,Wet,Tesco,1.2,Value
+Cat,Wet,Tesco,1.1,Value
+Dog,Wet,Tesco,0.65,Value
+Dog,Wet,Tesco,0.04,Value
+Dog,Wet,Tesco,0.03,Value
+Dog,Dry,Waitrose,0.23,Value
+Dog,Dry,Waitrose,0.6,Value
+Dog,Dry,Waitrose,0.13,Value
+Dog,Dry,Waitrose,0.67,Value
+Dog,Dry,Waitrose,0.19,Value
+Dog,Dry,Waitrose,0.56,Value
+Dog,Dry,Waitrose,0.09,Value
+Dog,Dry,Waitrose,0.09,Value
+Dog,Dry,Waitrose,0.29,Value
+Dog,Dry,Waitrose,1.1,Value
+Cat,Wet,Waitrose,0.14,Value
+Cat,Wet,Waitrose,0.23,Value
+Cat,Wet,Waitrose,1.1,Value
+Cat,Wet,Waitrose,0.7,Value
+Cat,Wet,Waitrose,0.05,Value
+Cat,Wet,Whiskas,0.32,Mid range
+Cat,Wet,Whiskas,0.29,Mid range
+Cat,Wet,Whiskas,0.59,Mid range
+Cat,Wet,Whiskas,0.13,Mid range
+Cat,Wet,Whiskas,0.7,Mid range
+Cat,Wet,Whiskas,0.02,Mid range
+Cat,Wet,Whiskas,0.15,Mid range
+Cat,Wet,Whiskas,0.29,Mid range
+Cat,Wet,Whiskas,0.14,Mid range
+Cat,Wet,Whiskas,0.68,Mid range
+Cat,Wet,Whiskas,0.21,Mid range
+Cat,Wet,Whiskas,0.3,Mid range
+Hedgehog,Dry,Wild things,0.04,Mid range
