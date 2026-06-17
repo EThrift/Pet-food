@@ -1,0 +1,31 @@
+Target animal,Type,Brand,Fibre
+Hedgehog,Dry,Bramble,1
+Dog,Dry,Canin,1
+Dog,Wet,Canin,1
+Hedgehog,Dry,Extra select natural,1
+Cat,Dry,Harringtons,1
+Cat,Wet,Harringtons,0
+Dog,Dry,Harringtons,1
+Cat,Dry,Iams,1
+Hedgehog,Dry,Igelfutter food,1
+Dog,Wet,Lily's kitchen,0
+Cat,Dry,Lily's kitchen,1
+Dog,Dry,Lily's kitchen,1
+Hedgehog,Dry,Mr Johnson,1
+Dog,Wet,Pedigree,0
+Dog,Dry,Pedigree,1
+Cat,Wet,Sainsbury Complete nutrition,0
+Dog,Wet,Sainsbury Complete nutrition,0
+Cat,Dry,Sainsbury Complete nutrition,1
+Cat,Dry,Scrumbles,1
+Hedgehog,Dry,Spikes,1
+Cat,Wet,Tesco,1
+Dog,Wet,Tesco,1
+Cat,Wet,Tesco,0
+Dog,Dry,Tesco,1
+Dog,Wet,Waitrose,1
+Cat,Wet,Waitrose,1
+Dog,Dry,Waitrose,1
+Cat,Wet,Whiskas,1
+Hedgehog,Dry,Wild things,0
+Hedgehog,Dry,Spikes,0
