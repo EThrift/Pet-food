@@ -7,7 +7,7 @@ library(glmmTMB)
 library(lme4) 
 
 
-df_sizes <- read_csv("size.csv")
+df_sizes <- read_csv("Microplastic_petfood_size.csv")
 
 
 # Remove spaces from column names
