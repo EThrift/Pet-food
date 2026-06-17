@@ -1,0 +1,7 @@
+﻿Target animal,Shape,n,Total,Percentage
+Cat,Fibre,18,39,46.15384615
+Cat,Fragment,21,39,53.84615385
+Dog,Fibre,28,40,70
+Dog,Fragment,12,40,30
+Hedgehog,Fibre,11,16,68.75
+Hedgehog,Fragment,5,16,31.25
