@@ -1,0 +1,59 @@
+Target animal,Type,Brand,Price category,Polyethylene,Polyester,Polyacrylamide ,Polyvinyl acetate,Nylon,Cellophane,Protein a helix film,Polypropylene,Polyacrylonitrile,Epoxy resin,Polynorbornene,CTA rubber,Aluminum silicate,Ethylene glycol stearate,Nautatuck Antioxidant 451,Polybutaine
+Cat,Wet,Whiskas,Mid range,0,0,0,0,0,0,0,0,0,0,0,0,1,0,0,0
+Cat,Wet,Whiskas,Mid range,0,0,0,0,0,1,0,0,0,0,0,0,0,0,1,0
+Hedgehog,Dry,Bramble,Mid range,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Dog,Dry,Canin,Mid range,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Cat,Wet,Whiskas,Mid range,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Hedgehog,Dry,Bramble,Mid range,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cat,Wet,Whiskas,Mid range,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Hedgehog,Dry,Wild things,Mid range,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cat,Dry,Harringtons,Mid range,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cat,Wet,Harringtons,Mid range,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dog,Dry,Pedigree,Mid range,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Hedgehog,Dry,Bramble,Mid range,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dog,Dry,Canin,Mid range,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cat,Wet,Harringtons,Mid range,0,1,0,0,0,0,0,0,0,0,0,0,0,1,0,0
+Hedgehog,Dry,Mr Johnson,Mid range,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dog,Dry,Pedigree,Mid range,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Hedgehog,Dry,Spikes,Mid range,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Hedgehog,Dry,Bramble,Mid range,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Cat,Wet,Whiskas,Mid range,0,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0
+Hedgehog,Dry,Bramble,Mid range,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Dog,Dry,Pedigree,Mid range,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Dog,Wet,Pedigree,Mid range,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Hedgehog,Dry,Igelfutter food,Premium,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+Dog,Dry,Lily's kitchen,Premium,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+Cat,Dry,Lily's kitchen,Premium,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+Cat,Dry,Lily's kitchen,Premium,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+Dog,Wet,Canin,Premium,0,0,0,0,0,0,0,0,0,1,0,1,0,0,0,0
+Dog,Wet,Canin,Premium,0,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0
+Cat,Dry,Iams,Premium,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0
+Cat,Dry,Scrumbles,Premium,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dog,Dry,Lily's kitchen,Premium,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cat,Dry,Lily's kitchen,Premium,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dog,Wet,Lily's kitchen,Premium,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Cat,Dry,Scrumbles,Premium,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Dog,Dry,Lily's kitchen,Premium,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0
+Dog,Wet,Waitrose,Value,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+Dog,Dry,Waitrose,Value,0,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0
+Cat,Wet,Tesco,Value,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dog,Dry,Tesco,Value,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dog,Dry,Tesco,Value,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+Cat,Wet,Waitrose,Value,0,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0
+Cat,Dry,Tesco,Value,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1
+Hedgehog,Dry,Extra select natural,Value,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dog,Wet,Sainsbury ,Value,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cat,Wet,Sainsbury ,Value,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cat,Dry,Sainsbury ,Value,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cat,Wet,Tesco,Value,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dog,Dry,Waitrose,Value,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cat,Wet,Waitrose,Value,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dog,Dry,Harringtons,Value,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Cat,Dry,Tesco,Value,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dog,Wet,Tesco,Value,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Dog,Dry,Waitrose,Value,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Cat,Wet,Waitrose,Value,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Cat,Wet,Whiskas,Value,0,0,0,0,0,0,0,1,0,0,0,0,0,0,0,0
+Dog,Dry,Harringtons,Value,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+Dog,Dry,Tesco,Value,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
+Dog,Dry,Waitrose,Value,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0
