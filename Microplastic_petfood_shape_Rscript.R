@@ -19,7 +19,7 @@ list.files()
 
 #load dataframe 
 
-df_shape <- read.csv("Fragment.csv")
+df_shape <- read.csv("Microplastic_petfood_shape_Fragment.csv")
 
 
 # Remove spaces from column names
@@ -68,7 +68,7 @@ plot(sim_res)
 # Overdispersion test using DHARMa
 testDispersion(sim_res)
 
-df_shape <- read.csv("fibre.csv")
+df_shape <- read.csv("Microplastic_petfood_shape_fibre.csv")
 
 # Remove spaces from column names
 colnames(df_shape) <- make.names(colnames(df_shape))
