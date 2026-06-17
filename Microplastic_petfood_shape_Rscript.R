@@ -19,7 +19,7 @@ list.files()
 
 #load dataframe 
 
-df_shape <- read.csv("Microplastic_petfood_shape_Fragment.csv")
+df_shape <- read.csv("Microplastic_petfood_shape_fragment.csv")
 
 
 # Remove spaces from column names
