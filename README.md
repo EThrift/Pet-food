@@ -5,3 +5,5 @@ Microplastic_petfood_Polymer f - this has the polymer use and food type
 Microplastic_petfood_Polymer t - this has the polymer use and target animal
 
 For all the csvs for making the plots n = count of each group, total = total overall count 
+
+Each sample of each brand was given a code as seen in the plastic presence csv 
