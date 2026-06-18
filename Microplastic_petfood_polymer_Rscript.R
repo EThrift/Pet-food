@@ -8,31 +8,21 @@ library(ggplot2)
 library(emmeans)
 library(car)
 
-#add in working location
-
 #load dataframe 
-df_polymer_main <- read.csv("Microplastic_petfood_Polymer use model.csv")
-df_polymer_type <- read.csv("Microplastic_petfood_Polymer_type.csv")
-df_polymer_food <- read.csv("Microplastic_petfood_Polymer_food.csv")
-df_polymer_f <- read.csv("Microplastic_petfood_Polymer food.csv") 
-df_polymer_t <- read.csv("Microplastic_petfood_Polymer t.csv") 
-df_polymer_price <- read.csv("Microplastic_petfood_Polymer price.csv")
+df_polymer_main <- read.csv("Microplastic_pet_food_Polymer use model.csv")
+df_polymer_f <- read.csv("Microplastic_pet_food_Polymer food type.csv") 
+df_polymer_t <- read.csv("Microplastic_pet_food_Polymer target animal.csv") 
+df_use <- read.csv("Microplastic_pet_food_Polymer use long.csv")
+df_polymer <- read.csv("Microplastic_pet_food_Polymer_combined.csv")
+df_price <- read.csv ("Microplastic_pet_food_Polymer Price.csv")
+
 # Remove spaces from column names
 colnames(df_polymer_f) <- make.names(colnames(df_polymer_f))
 colnames(df_polymer_t) <- make.names(colnames(df_polymer_t))
-colnames(df_polymer_type) <- make.names(colnames(df_polymer_type))
 colnames(df_polymer_main) <- make.names(colnames(df_polymer_main))
-
-colnames(df_polymer_food) <- make.names(colnames(df_polymer_food))
-colnames(df_polymer_price) <- make.names(colnames(df_polymer_price))
-
-
-df_price <- read.csv ("Price polymer.csv")
-colnames(df_price) <- make.names(colnames(df_price))
-
-df_polymer <- read.csv("Polymer_combined.csv")
+colnames(df_use) <- make.names(colnames(df_use)) 
 colnames(df_polymer) <- make.names(colnames(df_polymer))
-
+colnames(df_price) <- make.names(colnames(df_price))
 
 df_SDI_richness <- df_polymer %>%
   group_by(`Target.animal`, Type, `Price.category`) %>%
@@ -119,12 +109,6 @@ pairwise_comparisons <- contrast(emmeans_target, method = "pairwise")
 
 # View the results of the pairwise comparisons
 summary(pairwise_comparisons)
-
-#p =0.97
-
-df_use <- read.csv("Polymer use long.csv")
-
-colnames(df_use) <- make.names(colnames(df_use)) 
 
 library(binom)
 library(patchwork)
