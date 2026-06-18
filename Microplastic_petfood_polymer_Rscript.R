@@ -10,19 +10,15 @@ library(car)
 
 #load dataframe 
 df_polymer_main <- read.csv("Microplastic_pet_food_Polymer use model.csv")
-df_polymer_f <- read.csv("Microplastic_pet_food_Polymer food type.csv") 
-df_polymer_t <- read.csv("Microplastic_pet_food_Polymer target animal.csv") 
 df_use <- read.csv("Microplastic_pet_food_Polymer use long.csv")
 df_polymer <- read.csv("Microplastic_pet_food_Polymer_combined.csv")
-df_price <- read.csv ("Microplastic_pet_food_Polymer Price.csv")
+df_polymer_all <- read.csv ("Microplastic_pet_food_Polymer all.csv")
 
 # Remove spaces from column names
-colnames(df_polymer_f) <- make.names(colnames(df_polymer_f))
-colnames(df_polymer_t) <- make.names(colnames(df_polymer_t))
 colnames(df_polymer_main) <- make.names(colnames(df_polymer_main))
 colnames(df_use) <- make.names(colnames(df_use)) 
 colnames(df_polymer) <- make.names(colnames(df_polymer))
-colnames(df_price) <- make.names(colnames(df_price))
+colnames(df_polymer_all) <- make.names(colnames(df_polymer_all))
 
 df_SDI_richness <- df_polymer %>%
   group_by(`Target.animal`, Type, `Price.category`) %>%
@@ -149,7 +145,7 @@ P
 
 
 # Summarize data: mean, sd, se, total, and label positions
-df_counts_summary <- df_polymer_f %>%
+df_counts_summary <- df_polymer_all %>%
   group_by(Use, Food.type) %>%
   summarise(
     mean_count = mean(n),             # mean count per sample
@@ -223,7 +219,7 @@ ggplot(df_counts_summary, aes(x = Use, y = mean_count, pattern = Food.type)) +
 ggsave("plots/polymer_use_type.pdf", P, width = 12, height = 6)
 
 # Summarize data: mean, sd, se, total, and label positions
-df_counts_summary <- df_polymer_t %>%
+df_counts_summary <- df_polymer_all %>%
   group_by(Use, Target.animal) %>%
   summarise(
     mean_count = mean(n),             # mean count per sample
@@ -368,7 +364,7 @@ ggplot(df_counts_summary, aes(x = Use, y = total_count, fill = Price.category)) 
     plot.title = element_blank()
   )
 
-df_counts_summary <- df_price %>%
+df_counts_summary <- df_polymer_all %>%
   group_by(Use, Price.category) %>%
   summarise(
     total_count = sum(n),       # total counts per group
