@@ -1,0 +1,96 @@
+Animal,Type,Brand,Size
+Hedgehog,Dry,Bramble,0.27
+Hedgehog,Dry,Bramble,0.09
+Hedgehog,Dry,Bramble,0.18
+Hedgehog,Dry,Bramble,1.6
+Dog,Dry,Canin ,0.06
+Dog,Dry,Canin ,3.2
+Dog,Dry,Canin ,0.22
+Dog,Dry,Canin ,0.81
+Dog,Wet,Canin ,0.46
+Dog,Wet,Canin ,0.14
+Dog,Wet,Canin ,0.31
+Hedgehog,Dry,Extra select natural,0.1
+Hedgehog,Dry,Extra select natural,0.6
+Hedgehog,Dry,Extra select natural,0.42
+Hedgehog,Dry,Extra select natural,0.13
+Hedgehog,Dry,Extra select natural,0.31
+Dog,Dry,Harringtons,0.12
+Dog,Dry,Harringtons,0.23
+Dog,Dry,Harringtons,0.13
+Dog,Dry,Harringtons,0.01
+Dog,Dry,Harringtons,0.7
+Cat,Dry,Harringtons,0.19
+Cat,Dry,Harringtons,0.04
+Cat,Dry,Harringtons,0.23
+Cat,Wet,Harringtons,0.42
+Cat,Wet,Harringtons,0.41
+Cat,Dry,Iams ,0.22
+Cat,Dry,Iams ,0.04
+Hedgehog,Dry,Igelfutter food,0.12
+Dog,Dry,Lily's kitchen ,0.6
+Dog,Dry,Lily's kitchen ,0.7
+Dog,Dry,Lily's kitchen ,0.09
+Cat,Dry,Lily's kitchen ,0.6
+Cat,Dry,Lily's kitchen ,0.1
+Dog,Wet,Lily's kitchen ,0.13
+Dog,Wet,Lily's kitchen ,0.23
+Hedgehog,Dry,Mr Johnson,0.22
+Dog,Dry,Pedigree ,0.11
+Dog,Dry,Pedigree dry,0.32
+Dog,Dry,Pedigree dry,0.14
+Dog,Wet,Pedigree dry,0.09
+Dog,Dry,Sainsbury,2.2
+Cat,Wet,Sainsbury,0.08
+Cat,Wet,Sainsbury,1.1
+Cat,Wet,Sainsbury,1.3
+Cat,Wet,Sainsbury,1.3
+Cat,Dry,Scrumbles,0.38
+Cat,Dry,Scrumbles,0.12
+Cat,Dry,Scrumbles,0.23
+Hedgehog,Dry,Spikes,0.31
+Hedgehog,Dry,Spikes,0.91
+Hedgehog,Dry,Spikes,1.1
+Dog,Dry,Tesco,0.3
+Dog,Dry,Tesco,3.8
+Dog,Dry,Tesco,2.3
+Dog,Dry,Tesco,0.08
+Dog,Dry,Tesco,0.35
+Dog,Dry,Tesco,0.23
+Dog,Dry,Tesco,0.09
+Dog,Dry,Tesco,1.3
+Cat,Dry,Tesco,0.05
+Cat,Dry,Tesco,0.05
+Cat,Dry,Tesco,0.19
+Cat,Dry,Tesco,0.13
+Cat,Dry,Tesco,0.12
+Cat,Wet,Tesco,1.2
+Cat,Wet,Tesco,1.1
+Dog,Wet,Tesco,0.65
+Dog,Wet,Tesco,0.04
+Dog,Wet,Tesco,0.03
+Dog,Dry,Waitrose,0.23
+Dog,Dry,Waitrose,0.6
+Dog,Dry,Waitrose,0.13
+Dog,Dry,Waitrose,0.67
+Dog,Dry,Waitrose,0.19
+Dog,Dry,Waitrose,0.56
+Dog,Dry,Waitrose,0.09
+Dog,Dry,Waitrose,0.09
+Dog,Dry,Waitrose,0.29
+Dog,Dry,Waitrose,1.1
+Cat,Wet,Waitrose,0.23
+Cat,Wet,Waitrose,1.1
+Cat,Wet,Waitrose,0.7
+Cat,Wet,Waitrose,0.05
+Cat,Wet,Whiskas,0.32
+Cat,Wet,Whiskas,0.29
+Cat,Wet,Whiskas,0.59
+Cat,Wet,Whiskas,0.13
+Cat,Wet,Whiskas,0.7
+Cat,Wet,Whiskas,0.02
+Cat,Wet,Whiskas,0.15
+Cat,Wet,Whiskas,0.29
+Cat,Wet,Whiskas,0.14
+Cat,Wet,Whiskas,0.68
+Hedgehog,Dry,Wild things,0.04
