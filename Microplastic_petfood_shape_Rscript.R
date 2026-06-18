@@ -118,7 +118,7 @@ plot(sim_res)
 testDispersion(sim_res)
 
 
-df_type <- read_csv("Food type shape plot.csv")
+df_type <- read_csv("Microplastic_petfood_shape food type plot.csv")
 
 
 # Fix column names
@@ -175,7 +175,7 @@ ggsave("plots/shapetype.pdf", P, width = 10, height = 6)
 
 P
 
-df_type <- read_csv("Target animal shape plot.csv")
+df_type <- read_csv("Microplastic_petfood_shape Target animal plot.csv")
 
 
 # Fix column names
@@ -228,7 +228,7 @@ P <- ggplot(df_type, aes(x = Target.animal, y = Percentage, fill = Shape)) +
 ggsave("plots/shapetarget.pdf", P, width = 10, height = 6)
 P
 
-df_type <- read_csv("Price shape plot.csv")
+df_type <- read_csv("Microplastic_petfood_shape Price plot.csv")
 
 
 # Fix column names
