@@ -9,18 +9,16 @@ library(emmeans)
 library(car)
 
 #load dataframe 
-df_polymer_main <- read.csv("Microplastic_pet_food_Polymer use model.csv")
-df_use <- read.csv("Microplastic_pet_food_Polymer use long.csv")
-df_polymer <- read.csv("Microplastic_pet_food_Polymer_combined.csv")
-df_polymer_all <- read.csv ("Microplastic_pet_food_Polymer all.csv")
+df_polymer_all <- read.csv("Microplastic_petfood_Polymer all.csv") 
+df_use <- read.csv("Microplastic_petfood_Polymer use long.csv")
+df_polymer <- read.csv("Microplastic_petfood_Polymer_combined.csv")
 
 # Remove spaces from column names
-colnames(df_polymer_main) <- make.names(colnames(df_polymer_main))
 colnames(df_use) <- make.names(colnames(df_use)) 
 colnames(df_polymer) <- make.names(colnames(df_polymer))
 colnames(df_polymer_all) <- make.names(colnames(df_polymer_all))
 
-df_SDI_richness <- df_polymer %>%
+df_SDI_richness <- df_polymer_all %>%
   group_by(`Target.animal`, Type, `Price.category`) %>%
   summarise(
     Richness = n_distinct(Polymer),               # unique polymers
@@ -111,18 +109,16 @@ library(patchwork)
 
 library(dplyr)
 
-colnames(df_polymer_f)
-
-wilson_ci <- binom.confint(df_polymer_main$n, 
-                           df_polymer_main$Total, 
+wilson_ci <- binom.confint(df_polymer$n, 
+                           df_polymer$Total, 
                            method = "wilson")
 
-df_polymer_main <- df_polymer_main %>%
+df_polymer <- df_polymer %>%
   mutate(Lower = wilson_ci$lower * 100,  # Convert to percentage
          Upper = wilson_ci$upper * 100,
          label_y = Upper + 3.5)  # Position labels above error bars
 
-P <- ggplot(df_polymer_main, aes(x = Polymer, y = Percentage, fill = Target.animal)) +
+P <- ggplot(df_polymer, aes(x = Polymer, y = Percentage, fill = Target.animal)) +
   geom_bar(stat = "identity", position = position_dodge(width = 0.9), color = "black") +
   geom_errorbar(aes(ymin = Lower, ymax = Upper), width = 0.4, position = position_dodge(width = 0.9)) +
   geom_text(aes(y = label_y, label = paste(n, "/", Total)),
@@ -145,7 +141,7 @@ P
 
 
 # Summarize data: mean, sd, se, total, and label positions
-df_counts_summary <- df_polymer_all %>%
+df_counts_summary <- df_use %>%
   group_by(Use, Food.type) %>%
   summarise(
     mean_count = mean(n),             # mean count per sample
@@ -219,7 +215,7 @@ ggplot(df_counts_summary, aes(x = Use, y = mean_count, pattern = Food.type)) +
 ggsave("plots/polymer_use_type.pdf", P, width = 12, height = 6)
 
 # Summarize data: mean, sd, se, total, and label positions
-df_counts_summary <- df_polymer_all %>%
+df_counts_summary <- df_use %>%
   group_by(Use, Target.animal) %>%
   summarise(
     mean_count = mean(n),             # mean count per sample
@@ -293,7 +289,7 @@ ggsave("plots/polymer_use_target.pdf", P, width = 11, height = 6)
 #count not percentage 
 
 # Filter out Additives and ensure factor levels
-df_plot <- df_polymer_main %>%
+df_plot <- df_use %>%
   filter(Use != "Additives") %>%
   mutate(
     Use = factor(Use, levels = c("Industrial", "Packaging", "Textiles")),
@@ -364,7 +360,7 @@ ggplot(df_counts_summary, aes(x = Use, y = total_count, fill = Price.category)) 
     plot.title = element_blank()
   )
 
-df_counts_summary <- df_polymer_all %>%
+df_counts_summary <- df_use %>%
   group_by(Use, Price.category) %>%
   summarise(
     total_count = sum(n),       # total counts per group
@@ -415,7 +411,7 @@ ggplot(df_counts_summary, aes(x = Use, y = total_count, fill = Price.category)) 
     plot.title = element_blank()
   )
 
-df_counts_summary <- df_price %>%
+df_counts_summary <- df_use %>%
   group_by(Use, Price.category) %>%
   summarise(
     total_count = sum(n),
@@ -441,7 +437,7 @@ df_price %>%
     max_count = max(n)
   )
 
-df_price %>%
+df_use %>%
   filter(Use == "Textiles", Price.category == "Mid range") %>%
   summarise(
     n_samples = n(),
