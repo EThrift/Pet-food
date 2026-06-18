@@ -18,17 +18,11 @@ list.files()
 
 #load dataframe 
 
-df_presence <- read_csv("Microplastic_petfood_overall_presence.csv")
+df_presence <- read_csv("Microplastic_petfood_Overall plastic presence All.csv")
 
 
 # Remove spaces from column names
 colnames(df_presence) <- make.names(colnames(df_presence))
-
-df_presence_p <- read_csv("Overall plastic presence product.csv")
-
-
-# Remove spaces from column names
-colnames(df_presence_p) <- make.names(colnames(df_presence_p))
 
 # Cross-tabulate Brand by Target.animal
 brand_animal_table <- table(df_presence$Brand, df_presence$Target.animal)
@@ -211,255 +205,10 @@ chi_square_result
 
 #Chi square 7.57, df = 7, p = 0.37
 
-df_presence_plot <- read_csv("Overall plastic presence target animal plot.csv")
-
-
-# 0Remove spaces from column names
-colnames(df_presence_plot) <- make.names(colnames(df_presence_plot))
-
-library(binom)
-# Calculate Wilson confidence intervals correctly
-wilson_ci <- binom.confint(df_presence_plot$n, 
-                           df_presence_plot$Total, 
-                           method = "wilson")
-
-df_presence_plot <- df_presence_plot %>%
-  mutate(Lower = wilson_ci$lower * 100,  # Convert to percentage
-         Upper = wilson_ci$upper * 100,
-         label_y = Upper + 3.5)  # Position labels above error bars
-
-P <- ggplot(df_presence_plot, aes(x = Target.animal, y = Percentage)) +
-  geom_bar(stat = "identity", position = position_dodge(width = 0.9), color = "black", aes(fill = Target.animal)) +
-  geom_errorbar(aes(ymin = Lower, ymax = Upper), width = 0.4, position = position_dodge(width = 0.9)) +
-  geom_text(aes(y = label_y, label = paste(n, "/", Total)),
-            size = 6, position = position_dodge(width = 0.9), fontface = "plain", vjust = -0.5) +
-  labs(x = "Target Animal", y = "% Plastic Prevalence") +
-  theme_minimal() +
-  theme(
-    axis.text.x = element_text(size = 16, angle = 0, hjust = 0.5),
-    axis.text.y = element_text(size = 16),
-    axis.title.x = element_text(size = 18),
-    axis.title.y = element_text(size = 18),
-    panel.grid = element_blank(),
-    axis.line = element_line(color = "black"),
-    legend.position = "none"   # ✅ removes legend
-  ) +
-  scale_y_continuous(limits = c(0, 100), expand = expansion(mult = c(0, 0.1))) +
-  scale_fill_manual(values = c("Cat" = "grey", "Dog" = "white", "Hedgehog" = "grey30"))
-
-ggsave("plots/target.pdf", P, width = 9, height = 6)
-
-P
-
-df_presence_plot <- read_csv("Overall plastic presence target animal plot 2.csv")
-
-
-# 0Remove spaces from column names
-colnames(df_presence_plot) <- make.names(colnames(df_presence_plot))
-
-library(binom)
-# Calculate Wilson confidence intervals correctly
-wilson_ci <- binom.confint(df_presence_plot$n, 
-                           df_presence_plot$Total, 
-                           method = "wilson")
-
-df_presence_plot <- df_presence_plot %>%
-  mutate(Lower = wilson_ci$lower * 100,  # Convert to percentage
-         Upper = wilson_ci$upper * 100,
-         label_y = Upper + 3.5)  # Position labels above error bars
-
-P <- ggplot(df_presence_plot, aes(x = Target.animal, y = Percentage)) +
-  geom_bar(stat = "identity", position = position_dodge(width = 0.9), color = "black", aes(fill = Target.animal)) +
-  geom_errorbar(aes(ymin = Lower, ymax = Upper), width = 0.4, position = position_dodge(width = 0.9)) +
-  geom_text(aes(y = label_y, label = paste(n, "/", Total)),
-            size = 6, position = position_dodge(width = 0.9), fontface = "plain", vjust = -0.5) +
-  labs(x = "Target Animal", y = "% Plastic Prevalence") +
-  theme_minimal() +
-  theme(
-    axis.text.x = element_text(size = 16, angle = 0, hjust = 0.5),
-    axis.text.y = element_text(size = 16),
-    axis.title.x = element_text(size = 18),
-    axis.title.y = element_text(size = 18),
-    panel.grid = element_blank(),
-    axis.line = element_line(color = "black"),
-    legend.position = "none"   # ✅ removes legend
-  ) +
-  scale_y_continuous(limits = c(0, 100), expand = expansion(mult = c(0, 0.1))) +
-  scale_fill_manual(values = c("Cat" = "grey", "Dog" = "white", "Hedgehog" = "grey30"))
-
-P
-
-ggsave("plots/target2.pdf", P, width = 9, height = 6)
-
-# Read in the CSV
-df_presence_plot <- read_csv("Overall plastic presence plot.csv")
-
-# Clean column names
-colnames(df_presence_plot) <- make.names(colnames(df_presence_plot))
-
-# Calculate Wilson confidence intervals
-wilson_ci <- binom.confint(df_presence_plot$n, 
-                           df_presence_plot$Total, 
-                           method = "wilson")
-
-# Add lower/upper bounds and label position to the data
-df_presence_plot <- df_presence_plot %>%
-  mutate(Lower = wilson_ci$lower * 100,  # Convert to %
-         Upper = wilson_ci$upper * 100,
-         label_y = Upper + 3.5)  # Offset labels above error bars
-
-P <- ggplot(df_presence_plot, aes(x = Food.type, y = Percentage, fill = Food.type)) +
-  geom_bar(stat = "identity", position = position_dodge(width = 0.9), color = "black") +
-  geom_errorbar(aes(ymin = Lower, ymax = Upper), width = 0.4, position = position_dodge(width = 0.9)) +
-  geom_text(aes(y = label_y, label = paste(n, "/", Total)), 
-            size = 6, position = position_dodge(width = 0.9), vjust = -0.5) +
-  labs(x = "Food type", y = "% Plastic Prevalence") +
-  theme_minimal() +
-  theme(
-    legend.position = "none",  # Set to "right" if you want the legend back
-    axis.text.x = element_text(size = 16, angle = 0, hjust = 0.5),
-    axis.text.y = element_text(size = 16),
-    axis.title.x = element_text(size = 18),
-    axis.title.y = element_text(size = 18),
-    panel.grid = element_blank(),
-    axis.line = element_line(color = "black")
-  ) +
-  scale_y_continuous(limits = c(0, 100), expand = expansion(mult = c(0, 0.1))) +
-  scale_fill_manual(values = c("Wet" = "grey", "Dry" = "white"))  # ✅ Set Wet/Dry colors
-
-ggsave("plots/food.pdf", P, width = 9, height = 6)
-
-# Read in the CSV
-df_presence_plot <- read_csv("Overall plastic presence plot 2.csv")
-
-# Clean column names
-colnames(df_presence_plot) <- make.names(colnames(df_presence_plot))
-
-# Calculate Wilson confidence intervals
-wilson_ci <- binom.confint(df_presence_plot$n, 
-                           df_presence_plot$Total, 
-                           method = "wilson")
-
-# Add lower/upper bounds and label position to the data
-df_presence_plot <- df_presence_plot %>%
-  mutate(Lower = wilson_ci$lower * 100,  # Convert to %
-         Upper = wilson_ci$upper * 100,
-         label_y = Upper + 3.5)  # Offset labels above error bars
-
-P <- ggplot(df_presence_plot, aes(x = Food.type, y = Percentage, fill = Food.type)) +
-  geom_bar(stat = "identity", position = position_dodge(width = 0.9), color = "black") +
-  geom_errorbar(aes(ymin = Lower, ymax = Upper), width = 0.4, position = position_dodge(width = 0.9)) +
-  geom_text(aes(y = label_y, label = paste(n, "/", Total)), 
-            size = 6, position = position_dodge(width = 0.9), vjust = -0.5) +
-  labs(x = "Food type", y = "% Plastic Prevalence") +
-  theme_minimal() +
-  theme(
-    legend.position = "none",  # Set to "right" if you want the legend back
-    axis.text.x = element_text(size = 16, angle = 0, hjust = 0.5),
-    axis.text.y = element_text(size = 16),
-    axis.title.x = element_text(size = 18),
-    axis.title.y = element_text(size = 18),
-    panel.grid = element_blank(),
-    axis.line = element_line(color = "black")
-  ) +
-  scale_y_continuous(limits = c(0, 100), expand = expansion(mult = c(0, 0.1))) +
-  scale_fill_manual(values = c("Wet" = "grey", "Dry" = "white"))  # ✅ Set Wet/Dry colors
-
-ggsave("plots/food2.pdf", P, width = 9, height = 6)
-
-df_presence_plot_price <- read_csv("Price presence plot.csv")
-
-
-# 0Remove spaces from column names
-colnames(df_presence_plot_price) <- make.names(colnames(df_presence_plot_price))
-
-library(binom)
-# Calculate Wilson confidence intervals correctly
-wilson_ci <- binom.confint(df_presence_plot_price$n, 
-                           df_presence_plot_price$Total, 
-                           method = "wilson")
-
-df_presence_plot_price <- df_presence_plot_price %>%
-  mutate(Lower = wilson_ci$lower * 100,  # Convert to percentage
-         Upper = wilson_ci$upper * 100,
-         label_y = Upper + 3.5)  # Position labels above error bars
-
-df_presence_plot_price$Price.per.kg <- factor(df_presence_plot_price$Price.per.kg,
-                                              levels = c("Value", "Mid range", "Premium"))
-
-
-P <- ggplot(df_presence_plot_price, aes(x = Price.per.kg, y = Percentage)) +
-  geom_bar(stat = "identity", position = position_dodge(width = 0.9), color = "black", aes(fill = Price.per.kg)) +
-  geom_errorbar(aes(ymin = Lower, ymax = Upper), width = 0.4, position = position_dodge(width = 0.9)) +
-  geom_text(aes(y = label_y, label = paste(n, "/", Total)),
-            size = 6, position = position_dodge(width = 0.9), fontface = "plain", vjust = -0.5) +
-  labs(x = "Price category", y = "% Plastic Prevalence") +
-  theme_minimal() +
-  theme(
-    axis.text.x = element_text(size = 16, angle = 0, hjust = 0.5),
-    axis.text.y = element_text(size = 16),
-    axis.title.x = element_text(size = 18),
-    axis.title.y = element_text(size = 18),
-    panel.grid = element_blank(),
-    axis.line = element_line(color = "black"),
-    legend.position = "none",   # ✅ removes legend
-    plot.margin = margin(t = 10, r = 10, b = 10, l = 5)  # 🔧 Adjust left margin here
-      ) +
-  scale_y_continuous(limits = c(0, 100), expand = expansion(mult = c(0, 0.1))) +
-  scale_fill_manual(values = c("Value" = "grey", "Mid range" = "white", "Premium" = "grey30"))
-
-ggsave("plots/price.pdf", P, width = 9, height = 6)
-
-
-df_presence_plot_price <- read_csv("Price presence plot 2.csv")
-
-
-# 0Remove spaces from column names
-colnames(df_presence_plot_price) <- make.names(colnames(df_presence_plot_price))
-
-library(binom)
-# Calculate Wilson confidence intervals correctly
-wilson_ci <- binom.confint(df_presence_plot_price$n, 
-                           df_presence_plot_price$Total, 
-                           method = "wilson")
-
-df_presence_plot_price <- df_presence_plot_price %>%
-  mutate(Lower = wilson_ci$lower * 100,  # Convert to percentage
-         Upper = wilson_ci$upper * 100,
-         label_y = Upper + 3.5)  # Position labels above error bars
-
-df_presence_plot_price$Price.per.kg <- factor(df_presence_plot_price$Price.per.kg,
-                                              levels = c("Value", "Mid range", "Premium"))
-
-P <- ggplot(df_presence_plot_price, aes(x = Price.per.kg, y = Percentage)) +
-  geom_bar(stat = "identity", position = position_dodge(width = 0.9), color = "black", aes(fill = Price.per.kg)) +
-  geom_errorbar(aes(ymin = Lower, ymax = Upper), width = 0.4, position = position_dodge(width = 0.9)) +
-  geom_text(aes(y = label_y, label = paste(n, "/", Total)),
-            size = 6, position = position_dodge(width = 0.9), fontface = "plain", vjust = -0.5) +
-  labs(x = "Price category", y = "% Plastic Prevalence") +
-  theme_minimal() +
-  theme(
-    axis.text.x = element_text(size = 16, angle = 0, hjust = 0.5),
-    axis.text.y = element_text(size = 16),
-    axis.title.x = element_text(size = 18),
-    axis.title.y = element_text(size = 18),
-    panel.grid = element_blank(),
-    axis.line = element_line(color = "black"),
-    legend.position = "none"
-  ) +
-  scale_y_continuous(
-    limits = c(0, 110),
-    breaks = seq(0, 100, 25),  # ⬅️ breaks at 0, 25, 50, 75, 100
-    expand = expansion(mult = c(0, 0.1))
-  )+
-  scale_fill_manual(values = c("Value" = "grey", "Mid range" = "white", "Premium" = "grey30"))
-
-ggsave("plots/price2.pdf", P, width = 9, height = 6)
-
 # Read both CSVs
-df_samples <- read_csv("Overall plastic presence target animal plot.csv") %>%
+df_samples <- read_csv("Microplastic_petfood_Overall plastic presence target animal plot sample.csv") %>%
   mutate(Type = "Sample")
-df_products <- read_csv("Overall plastic presence target animal plot 2.csv") %>%
+df_products <- read_csv("Microplastic_petfood_Overall plastic presence target animal plot product.csv") %>%
   mutate(Type = "Product")
 
 # Combine and clean
@@ -502,9 +251,9 @@ ggsave("plots/target_combined.pdf", P, width = 9, height = 6)
 
 #combined food type plot
 # Read both datasets
-df_samples <- read_csv("Overall plastic presence plot.csv") %>%
+df_samples <- read_csv("Microplastic_petfood_Overall plastic presence plot food type sample.csv") %>%
   mutate(Type = "Sample")
-df_products <- read_csv("Overall plastic presence plot 2.csv") %>%
+df_products <- read_csv("Microplastic_petfood_Overall plastic presence plot food type product.csv") %>%
   mutate(Type = "Product")
 
 # Combine and clean
@@ -548,9 +297,9 @@ ggsave("plots/food_combined.pdf", P, width = 9, height = 6)
 #combined price plot
 
 # Read both CSVs for price category
-df_samples_price <- read_csv("Price presence plot.csv") %>%
+df_samples_price <- read_csv("Microplastic_petfood_Price presence plot sample.csv") %>%
   mutate(Type = "Sample")
-df_products_price <- read_csv("Price presence plot 2.csv") %>%
+df_products_price <- read_csv("Microplastic_petfood_Price presence plot product.csv") %>%
   mutate(Type = "Product")
 
 # Combine datasets
