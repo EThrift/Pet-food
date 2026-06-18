@@ -1,0 +1,59 @@
+Target animal,Type,Brand,Price category,Polymer,n,Total,Percentage
+Hedgehog,Dry,Extra select natural,Value,Polyester,5,5,100
+Cat,Dry,Harringtons,Mid range,Polyacrylamide film,3,3,100
+Cat,Wet,Harringtons,Mid range,Polyacrylamide film,1,2,50
+Cat,Wet,Harringtons,Mid range,Polyester,1,2,50
+Dog,Dry,Harringtons,Value,Polyethylene,3,5,60
+Dog,Dry,Harringtons,Value,Polyvinyl acetate,2,5,40
+Hedgehog,Dry,Igelfutter food,Premium,Cellophane,1,1,100
+Cat,Dry,Iams,Mid range,Nylon,2,2,100
+Dog,Dry,Lily's kitchen,Premium,Cellophane,1,3,33
+Dog,Dry,Lily's kitchen,Premium,Polyester,1,3,33
+Dog,Dry,Lily's kitchen,Premium,Protein a helix film,1,3,33
+Cat,Dry,Lily's kitchen,Premium,Cellophane,1,3,33
+Cat,Dry,Lily's kitchen,Premium,Polyester,1,3,33
+Cat,Dry,Lily's kitchen,Premium,Cellophane,1,3,33
+Dog,Wet,Lily's kitchen,Premium,Polypropylene,1,1,100
+Hedgehog,Dry,Mr Johnson,Mid range,Polyester,1,1,100
+Dog,Dry,Pedigree,Mid range,Polyacrylamide film,1,3,33
+Dog,Dry,Pedigree,Mid range,Polyester,1,3,33
+Dog,Dry,Pedigree,Mid range,Polypropylene,1,3,33
+Dog,Wet,Pedigree,Mid range,Polypropylene,1,1,100
+Dog,Wet,Sainsbury Complete nutrition,Value,Polyester,1,1,100
+Cat,Wet,Sainsbury Complete nutrition,Value,Polyester,2,2,100
+Cat,Dry,Sainsbury Complete nutrition,Value,Polyester,2,2,100
+Cat,Dry,Scrumbles,Premium,Polyacrylamide film,2,3,67
+Cat,Dry,Scrumbles,Premium,Polypropylene,1,3,33
+Dog,Dry,Tesco,Value,Polyacrylonitrile,2,6,33
+Dog,Dry,Tesco,Value,Polyacrylamide ,3,6,50
+Dog,Dry,Tesco,Value,Polyvinyl acetate,1,6,17
+Dog,Dry,Waitrose,Value,Polyester,5,10,50
+Dog,Dry,Waitrose,Value,Polypropylene,2,10,20
+Dog,Dry,Waitrose,Value,Polyvinyl acetate,2,10,20
+Dog,Dry,Waitrose,Value,Cellophane ,1,10,10
+Cat,Wet,Waitrose,Value,Polypropylene,2,4,50
+Cat,Wet,Waitrose,Value,Polyacrylonitrile,1,4,25
+Cat,Wet,Waitrose,Value,Polyester,1,4,25
+Dog,Wet,Waitrose,Value,Cellophane,1,1,100
+Hedgehog,Dry,Wild things,Mid range,Polyacrylamide,1,1,100
+Hedgehog,Dry,Bramble,Mid range,Polypropylene,1,5,20
+Hedgehog,Dry,Bramble,Mid range,Nautatuck Antioxidant 451,1,5,20
+Hedgehog,Dry,Bramble,Mid range,Epoxy resin,1,5,20
+Hedgehog,Dry,Bramble,Mid range,Polyester,1,5,20
+Hedgehog,Dry,Bramble,Mid range,Polynorbornene,1,5,20
+Dog,Dry,Canin,Mid range,Epoxy resin,2,3,67
+Dog,Dry,Canin,Mid range,Polyester,1,3,33
+Dog,Wet,Canin,Premium,Epoxy resin,1,3,33
+Dog,Wet,Canin,Premium,CTA rubber,2,3,67
+Hedgehog,Dry,Spikes,Mid range,Polyester,3,3,100
+Cat,Dry,Tesco,Value,Polybutaine,3,5,60
+Cat,Dry,Tesco,Value,Polyethylene,2,5,40
+Cat,Wet,Tesco,Value,Epoxy resin,1,2,50
+Cat,Wet,Tesco,Value,Polyester,1,2,50
+Dog,Wet,Tesco,Value,Polyethylene,3,3,100
+Cat,Wet,Whiskas,Mid range,Cellophane,2,10,20
+Cat,Wet,Whiskas,Mid range,Aluminum silicate,1,10,10
+Cat,Wet,Whiskas,Mid range,Polyacrylamide,1,10,10
+Cat,Wet,Whiskas,Mid range,Polynorbornene,3,10,30
+Cat,Wet,Whiskas,Mid range,Ethylene glycol stearate,2,10,20
+Cat,Wet,Whiskas,Mid range,Polypropylene,1,10,10
