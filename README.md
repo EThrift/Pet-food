@@ -3,7 +3,7 @@ Each sample of each brand was given a code as seen in the plastic presence csv
 
 - Microplastic_petfood_overall_presence_Rscript.R is the code used to run analyses and make plots on the overall presence of plastics in the samples and products
 
-- Microplastic_petfood_Overall_plastic_presence All.csv shows for the 63 combinations of target animal, food type and price band, the presence/absence of microplastics in the samples tested.
+- Microplastic_petfood_Overall_plastic_presence All.csv shows for the 228 combinations of target animal, food type and price band, the presence/absence of microplastics in the samples tested.
 
 - Microplastic_petfood_Overall_plastic_presence plot target animal sample.csv shows the number of samples for each target animal, which contained microplastics (n), the total number of samples tested for each (total) and the percentage. This was used to create Figure 1. 
 
